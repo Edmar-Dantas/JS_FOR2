@@ -36,7 +36,8 @@
                 msg += "Nome do Funcionario: " + nome + "|| Idade: " + idade + "<br>";
             } 
             tCandidatos++;
-        }while (continuar == "sim")
+            continuar = prompt("Deseja continuar? [s/n]")
+        }while (continuar == "s")
 
         mIdade = (totalIdade / tCandidatos).toFixed(1);
         console.log(msg);
